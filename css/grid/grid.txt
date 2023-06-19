@@ -1,0 +1,75 @@
+Grid - технология позиционирования блоков в виде сетки
+
++ гибкость управления 
++ адаптивность 
+
+- нет поддержки старых браузеров
+- сложности с изучением и анимацией
+
+Категории свойств:
+
+1. для родительского блока 
+    grid - создает grid
+    grid-template = grid-template-rows/grid-template-columns
+    grid-template-columns - количество и размер колонок
+    grid-template-rows - количество и размер строк
+    grid-auto-flow
+    grid-auto-columns
+    grid-auto-rows
+    gap
+    row-gap
+    column-gap
+
+2. для дочерних элементов
+    justify-self
+    align-self
+
+3. общие
+    grid-template-areas
+    grid-area
+    grid-row 
+    grid-row-start 
+    grid-row-end 
+    grid-column 
+    grid-column-start 
+    grid-column-end 
+
+Единицы измерения 
+
+- пиксели
+- проценты
+- fr фракция (дробная единица)
+- min-content ()
+
+Создать grid-контейнер, растянутый по ширине
+.container {
+    display: grid;
+}
+
+Создать grid-контейнер шириной по содержанию контента
+.container {
+    display: inline-grid;
+}
+
+Задать колонки
+.container {
+    display: grid;
+    grid-template-columns: ширина, ширина ....
+}
+
+* количество ширин это количество колонок
+
+Задать ряд
+.container {
+    display: grid;
+    grid-template-columns: ширина, ширина ....
+    grid-template-row: высота, высота
+}
+
+* количество высот это количество рядов
+
+Сократить запись
+grid-template-colums: repeat(количество, ширина)
+
+Задать относительный размер от контейнера
+grid-template-rows: repeat(количество, число_фракций)

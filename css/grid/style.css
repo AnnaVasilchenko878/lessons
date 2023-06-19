@@ -1,0 +1,38 @@
+body {
+  box-sizing: border-box;
+  background-color: #A78B71;
+}
+
+/* grid-контейнер на всю ширину */
+.box {
+  display: grid;
+  background-color: #583E26;
+  list-style: none;
+  padding-top: 2px;
+  padding-left: 2px;
+
+  /* полня запись */
+  /* grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px; */
+
+  /* grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 1fr 2fr; */
+
+  /* запись с repeat */
+  /* grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px); */
+
+  /* grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 2fr); */
+
+  /* общее */
+  /* grid-template: 100px 100px/100px 100px 100px; */
+  /* grid-template: repeat(2, 100px)/repeat(3, 100px); */
+  grid-template: 1fr 2fr/1fr 2fr 3fr;
+}
+
+.box-item {
+  background-color: #F7C815;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}

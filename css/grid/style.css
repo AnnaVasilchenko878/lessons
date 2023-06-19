@@ -25,14 +25,40 @@ body {
   /* grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(2, 2fr); */
 
+  /* min-content */
+  /* grid-template-columns: min-content min-content min-content;
+  grid-template-rows: min-content; */
+
   /* общее */
   /* grid-template: 100px 100px/100px 100px 100px; */
   /* grid-template: repeat(2, 100px)/repeat(3, 100px); */
-  grid-template: 1fr 2fr/1fr 2fr 3fr;
+  /* grid-template: repeat(2, 50%)/repeat(3, 50%); */
+
+  /* grid-template: 1fr 2fr/1fr 2fr 3fr; */
+
+  /* row-gap */
+  /* row-gap: 5px; */
+
+  /* column-gap */
+  /* column-gap: 10px;*/
+
+  /* gap */
+  gap: 5px;
+  /* gap: 10px 5px; */
+  /* gap: 2px; */
+  /* gap: normal; */
+  /* gap: 1em; */
+  /* gap: calc(1% + 5px); */
+
+  /* justify-items */
+  justify-items: start;
+  justify-items: end;
+  justify-items: center;
+
 }
 
 .box-item {
   background-color: #F7C815;
-  margin-right: 2px;
-  margin-bottom: 2px;
+  /* margin-right: 2px;
+  margin-bottom: 2px; */
 }

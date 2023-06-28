@@ -86,12 +86,52 @@
 //     reg = /\d{2,3}/;
 // console.log(str.match(reg));
 
-// квантификатор от и до бесконечности
+// жадный квантификатор от и до бесконечности
 // let str = `Отсюда до реки 5 а до города километров 1888`,
 //     reg = /\d{2,}/;
 // console.log(str.match(reg));
 
-// квантификатор {} c диапеазоном ленивый
+// ленивый квантификатор {} c диапеазоном
 // let str = `Отсюда до реки 50км а до города 180`,
 //     reg = /\d{2,3}?/;
 // console.log(str.match(reg));
+
+// ленивый квантификатор от и до бесконечности
+// let str = `Отсюда до реки 50км а до города 180`,
+//     reg = /\d{2,}?/;
+// console.log(str.match(reg));
+
+// квантификатор в уловии
+// let str = `Кто такой адресат?`,
+//     reg = /адресан?т/;
+// console.log(str.match(reg));
+
+// квантификатор *
+// let str = `123456789`,
+//     reg = /\d*/;
+// console.log(str.match(reg));
+
+// ленивый квантификатор *?
+// let str = `123456789`,
+//     reg = /\d*?/;
+// console.log(str.match(reg));
+
+// + 
+// let str = `123456789`,
+//     reg = /\d+/;
+// console.log(str.match(reg))
+
+// split
+// let str =`1,2,3, 4 , 5   ,6`,
+//     reg = /\s*,\s*/;
+// console.log(str.split(reg));
+
+// search
+// let str = `.....8652482`,
+//     reg = /\d{7}/;
+// console.log(str.search(reg));
+
+// флаг g
+let str = `apple`,
+    reg=/./g;
+console.log(str.match(reg));

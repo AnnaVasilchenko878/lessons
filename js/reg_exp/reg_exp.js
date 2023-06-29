@@ -131,7 +131,32 @@
 //     reg = /\d{7}/;
 // console.log(str.search(reg));
 
-// флаг g
-let str = `apple`,
-    reg=/./g;
-console.log(str.match(reg));
+// флаг g глобальный поиск
+// let str = `apple`,
+//     reg=/./g;
+// console.log(str.match(reg));
+
+// флаг s сингллайновый режим
+// let str = `123\n4`,
+//     reg = /./gs;
+// console.log(str.match(reg));
+
+// флаг i регистронезависимый 
+// let str = `Кот терракотового цвета кушает котлету`,
+//     reg = /кот/gi;
+// console.log(str.match(reg));
+
+// метод matchAll()
+// let str = `Кот терракотового цвета кушает котлету`,
+//   reg = /кот/gi;
+// console.log(str.matchAll(reg));
+
+// метод matchAll() в массиве
+// let str = `Кот терракотового цвета кушает котлету`,
+//   reg = /кот/gi;
+// console.log(Array.from(str.matchAll(reg)));
+
+// метод класса RegExp exec()
+let str = `Кот терракотового цвета кушает котлету`,
+  reg = /кот/gi;
+console.log(reg.exec(str));

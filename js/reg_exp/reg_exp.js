@@ -157,6 +157,12 @@
 // console.log(Array.from(str.matchAll(reg)));
 
 // метод класса RegExp exec()
-let str = `Кот терракотового цвета кушает котлету`,
-  reg = /кот/gi;
-console.log(reg.exec(str));
+// let str = `Кот терракотового цвета кушает котлету`,
+//   reg = /кот/gi;
+// console.log(reg.exec(str));
+
+// юникодный символ + u
+let str = `Всего 20$`,
+    reg = /\p{Sc}/gu;
+
+console.log(str.match(reg));

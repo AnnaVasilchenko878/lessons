@@ -200,3 +200,31 @@
 // let str = `12345611`,
 //     reg = /^.{6}$/;
 // console.log(reg.test(str));
+
+// скобочная группа
+// let str = `
+//           865E-5628-5815 banana
+//           8936-562K-896G orange
+//           896N-521J-H845 lemon`;
+// let reg = /([A-Z\d]{4}-){3}[A-Z\d]{4}/g;
+// console.log(Array.from(str.matchAll(reg)));
+
+// метод replace() c совпадением
+// let str = `Привет User`,
+//     reg = /\w+/;
+// console.log(str.replace(reg, '$&'));
+
+// метод replace() c вставкой до совпадения
+// let str = `Привет User`,
+//     reg = /\w+/;
+// console.log(str.replace(reg, '$`'));
+
+// метод replace() c вставкой после совпадения
+// let str = `Привет User !`,
+//     reg = /\w+/;
+// console.log(str.replace(reg, '$\''))
+
+//
+let str = `Привет George Henry`,
+    reg = /\w+\s\w+/;
+  console.log(str.match(reg));

@@ -224,7 +224,39 @@
 //     reg = /\w+/;
 // console.log(str.replace(reg, '$\''))
 
-//
-let str = `Привет George Henry`,
-    reg = /\w+\s\w+/;
-  console.log(str.match(reg));
+//метод replace() с обратной ссылкой
+// let str = `Привет George Henry`,
+//     reg = /(\w+)\s(\w+)/;
+//   console.log(str.replace(reg, '$2 $1'));
+
+// replace c обратной ссылкой на шаблон
+// let str = `Привет George Henry`,
+//     reg = /(?<first_name>\w+)\s(?<last_name>\w+)/;
+// console.log(str.replace(reg, `$<last_name> $<first_name>`));
+
+// replace c получением данных о совпадении и скобочной группе
+// let str = `Привет George Henry`,
+//     reg = /(?<name>\w+)\s(?<last_name>\w+)/;
+// result = str.replace(reg, (match, p1, p2, offset, input, groups)=> {
+//   console.log(`Найдено совпадение: ${match}`);
+//   console.log(`Первое слово: ${p1}`);
+//   console.log(`Второе слово: ${p2}`);
+//   console.log(`Индекс совпадения: ${offset}`);
+//   console.log(`Строка целиком: ${input}`);
+//   console.log(groups);
+// })
+
+//альтернация
+//  let str = `abcdef`,
+//     reg = /b|d/g;
+//   console.log(str.match(reg));
+
+// позитивная опережающая проверка (находит число если за ним пробел и слово "рублей")
+// let str = `"Это будет стоить 500 рублей, а это 300.`
+//     reg = /\d+\b(?=\sрублей)/g;
+// console.log(str.match(reg));
+
+// негативная опережающая проверка (находит число если за ним нет пробела и слово "рублей")
+let str = `"Это будет стоить 500 рублей, а это 300.`,
+    reg = /\d+\b(?!\sрублей)/g;
+console.log(str.match(reg));

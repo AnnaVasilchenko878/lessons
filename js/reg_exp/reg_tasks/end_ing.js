@@ -2,7 +2,7 @@
 
 function searchIngEnd(currentString) {
   let regIngEnd = /[a-zA-z+]\w+ing/g;
-  console.log(currentString.match(regIngEnd));
+ return currentString.match(regIngEnd);
 }
 
 let ingArray = searchIngEnd(`Listing, reading, chat, rendering, harmony`);

@@ -1,0 +1,39 @@
+body {
+  display: grid; 
+  height: 100vh;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+  display: grid;
+  margin: 0;
+  padding: 0 10px;
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(4, 100px);
+  gap: 5px;
+  background-color: grey;
+  justify-content: center;
+  align-content: center;
+  max-height: 250px;
+}
+
+li {
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+.animation {
+  animation: top-bottom 1s;
+}
+
+@keyframes top-bottom {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

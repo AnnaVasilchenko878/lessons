@@ -1,0 +1,66 @@
+:root {
+  --dark-green: #212517;
+  --green: #374709;
+  --light-green: #759242;
+  --beige: #ded3a6;
+  --light-grey: #f2f2ef;
+}
+body {
+  background-color: var(--beige);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 20px;
+}
+form {
+  background-color: var(--light-green);
+  padding: 25px 25px;
+  border: 1px solid var(--green);
+  box-shadow: 1px 0px 8px var(--green);
+  border-radius: 5px; 
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: repeat(6, 50px);
+  gap: 5px;
+}
+input {
+  padding-left: 15px;
+  border: 1px solid var(--green);
+  border-radius: 5px;
+}
+input::placeholder{
+  color: var(--dark-green);
+}
+button,
+.modal-btn {
+  border-radius: 5px;
+  border: 1px solid var(--green);
+  color: var(--dark-green);
+  background-color: var(--beige);
+  cursor: pointer;
+}
+
+.modal {
+  background-color: var(--light-green);
+  padding: 25px 25px;
+  border: 1px solid var(--green);
+  box-shadow: 1px 0px 8px var(--green);
+  border-radius: 5px;
+  color: var(--dark-green);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  align-items: center;
+}
+.modal-btn {
+  padding: 10px 25px;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: grid;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: black;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <title>Background change</title>
+</head>
+<body>
+  <button>Click me</button>
+  <!-- Сделать обработчик события для нажатия на кнопку, который будет менять цвет фона приложения. -->
+  <script>
+    let body = document.querySelector(`body`),
+    btn = document.querySelector(`button`);
+    btn.addEventListener('click', function(){
+      body.style.backgroundColor = `green`;
+    })
+    
+  </script>
+</body>
+</html>

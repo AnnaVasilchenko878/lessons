@@ -1,0 +1,16 @@
+body {
+  height: 8000px;
+  background-color: green;
+}
+.gallery-container {
+  overflow-x: hidden;
+}
+
+.gallery-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 500px);
+}
+

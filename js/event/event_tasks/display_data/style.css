@@ -1,0 +1,86 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #7f756b;
+  height: 100vh;
+  box-sizing: border-box;
+  background: rgb(213,162,21);
+  background: linear-gradient(114deg, rgba(213,162,21,0.8883928571428571) 0%, rgba(255,72,6,0.7091211484593838) 49%);
+  display: grid;
+  grid-template-columns: 350px;;
+  justify-content: center;
+  align-content: center;
+}
+.form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 130px 41px 67px 41px;
+  background-image: url('round-2.png'),
+                    url('round.png'),
+                    url('round-3.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 91px 94px, 150px 150px, 135px 136px;
+  background-position: 91px -18px, -23px -18px, 261px -27px ;
+  display: grid;
+  grid-template-columns: auto;
+  box-shadow: 0px 3px 11px #2d2929;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+label {
+  text-transform: capitalize;
+  transform: translateY(32px);
+  cursor: pointer;
+}
+
+.label-hover {
+  transform: translateY(0px);
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #7f756b;
+  margin-bottom: 15px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 0;
+}
+
+button {
+  margin-top: 23px;
+  text-transform: capitalize;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color:  #f1af73;
+  cursor: pointer;
+}
+
+.modal {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 130px 41px 67px 41px;
+  background-image: url('round-2.png'),
+                    url('round.png'),
+                    url('round-3.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 91px 94px, 150px 150px, 135px 136px;
+  background-position: 91px -18px, -23px -18px, 261px -27px ;
+  grid-template-columns: auto;
+  box-shadow: 0px 3px 11px #2d2929;
+  transform: scaleX(0);
+  display: none;
+}
+.hide {
+  transform: scale(0);
+  display: none;
+}
+.show {
+  transform: scaleX(1);
+  display: grid;
+}

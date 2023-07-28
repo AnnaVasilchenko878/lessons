@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Display form</title>
+</head>
+<body>
+    <form class="form" action="#" method="POST">
+      <h2 class="form-title">Sing up</h2>
+      <label for="user-name">Full name</label>
+      <input type="text" id="user-name">
+      <label for="user-email">Email adress</label>
+      <input type="email" id="user-email">
+      <label for="user-password">Password</label>
+      <input type="password" id="user-password">
+      <button type="submit">Sing up</button> 
+    </form>
+  <div class="modal">
+    <p class="user-name-output"></p>
+    <p class="user-email-output"></p>
+    <p class="user-password-output"></p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/approvejs/3.1.2/approve.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

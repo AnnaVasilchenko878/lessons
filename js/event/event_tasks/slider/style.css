@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+.slider-container {
+  width: 1000px;
+  height: 700px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.slider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 5000px;
+  position: relative;
+}
+.btn-container {
+  position: relative;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+}
+.btn-prew {
+  left: -1100px;
+}
+.btn-next {
+  left: 35px;
+}

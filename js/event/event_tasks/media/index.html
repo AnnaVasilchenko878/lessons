@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Audio</title>
+</head>
+<body>
+  <div class="content-container">
+    <div class="audio-card">
+      <img class="audio-img" src="img/img-track.jpg" alt="">
+      <div class="audio-content-wrapper">
+        <h3 class="audio-author">Depeche Mode</h3>
+        <p class="audio-name">Enjoy the selence</p>
+        <div class="audio-wrapper">
+          <span class="time-start">00:00</span>
+          <span class="full-time">3:25</span>
+          <div class="track-progress"></div>
+        </div>
+        <audio>
+          <source src="audio/depeche-mode-enjoy-the-silence.mp3" type="audio/mpeg">
+          <source src="audio/depeche-mode-enjoy-the-silence.ogg" type="audio/ogg">
+        </audio>
+        <div class="audio-controls-wrapper">
+            <button type=button class="btn"">
+            <svg width="20" height="20">
+              <use xlink:href="img/icons.svg#icon-prew"></use>
+            </svg>
+            </button>
+            <button type="button" class="btn btn-play">
+              <svg width="20" height="20">
+                <use xlink:href="img/icons.svg#icon-play"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-pause hide">
+              <svg width="20" height="20">
+                <use xlink:href="img/icons.svg#icon-pause"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-next">
+              <svg width="20" height="20">
+                <use xlink:href="img/icons.svg#icon-next"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn">
+              <svg width="20" height="20">
+                <use xlink:href="img/icons.svg#icon-repeat"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn">
+              <svg width="20" height="20">
+                <use xlink:href="img/icons.svg#icon-volume"></use>
+              </svg>
+            </button>
+            <button type="button" class="btn">
+              <svg width="20" height="20">
+                <use xlink:href="img/icons.svg#icon-track-list"></use>
+              </svg>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

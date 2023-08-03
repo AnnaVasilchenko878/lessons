@@ -1,0 +1,81 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  background-color: #333026;
+  justify-content: center;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.content-container {
+  padding-top: 10px;
+}
+.audio-card {
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+}
+.audio-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.audio-author {
+  margin: 0;
+}
+.audio-name {
+  margin: 0;
+  margin-bottom: 142px;
+}
+.audio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 276px;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.time-start {
+  margin-bottom: 5px;
+}
+
+.track-progress {
+  width: 275px;
+  height: 4px;
+  background-color: #807676;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  border-radius: 5px;
+  position: relative;
+}
+.track-progress::before {
+  content: " ";
+  width: 29px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #eda915;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:hover>svg {
+    fill: #362e17;
+}
+
+.btn-next {
+  margin-right: 65px;
+}
+svg {
+  fill: #605840;
+}
+.hide {
+  display: none;
+}

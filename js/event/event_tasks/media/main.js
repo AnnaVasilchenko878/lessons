@@ -66,7 +66,28 @@ window.addEventListener('DOMContentLoaded', function(){
       }
     })
 
+    //регулировка громкости volume 0-1
+    const btnVolumeMute = document.querySelector('.btn-volume-mute'),
+          btnVolumeLow = document.querySelector('.btn-volume-low'),
+          btnVolumeHigh = document.querySelector('.btn-volume-high');
+
+    audio.volume = 0.5;
+    btnVolumeLow.addEventListener('click', function(){
+      this.classList.add('hide');
+      btnVolumeHigh.classList.remove('hide');
+      audio.volume = 1;
+    })
+
+    btnVolumeHigh.addEventListener('click', function(){
+      this.classList.add('hide');
+      btnVolumeMute.classList.remove('hide');
+      audio.volume = 0;
+    })
+
+    btnVolumeMute.addEventListener('click', function(){
+      this.classList.add('hide');
+      btnVolumeLow.classList.remove('hide');
+      audio.volume = 0.5;
+    })
   });
 });
-  // регулировка громкости
-  // плейлист

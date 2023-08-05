@@ -74,6 +74,10 @@ body {
 .btn-next {
   margin-right: 65px;
 }
+.btn-current {
+  fill: black;
+}
+
 svg {
   fill: #605840;
 }

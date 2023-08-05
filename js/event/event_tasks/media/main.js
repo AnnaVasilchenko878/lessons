@@ -51,9 +51,22 @@ window.addEventListener('DOMContentLoaded', function(){
           timeOutput = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`; 
           timeStartOutput.textContent = timeOutput;
     })
+    // бесконечное проигрывание плэйлиста
+    const audioRepeat = document.querySelector('.btn-repeat'),
+          iconRepeat = document.querySelector('.icon-repeat');
+
+    audioRepeat.addEventListener('click', function(){
+      iconRepeat.classList.toggle('btn-current');
+    })
+
+    audio.addEventListener('ended', function(){
+      console.log('Трек закончился');
+      if(iconRepeat.classList.contains('btn-current')) {
+        audio.play();
+      }
+    })
+
   });
-  // 
 });
-  // бесконечное проигрывание плэйлиста
   // регулировка громкости
   // плейлист

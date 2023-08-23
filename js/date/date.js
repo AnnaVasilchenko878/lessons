@@ -15,5 +15,47 @@
 // let date = new Date('1995-01-20');
 // console.log(date);
 
-let date = new Date('1985-02-10T15:35:20');
-console.log(date);
+// добавление свойство прототипу
+// Date.prototype.userName = 'Nastya';
+// if (Date.prototype.hasOwnProperty('userName')) {
+//   console.log('Свойство userName присутствует в прототипе класса Date');
+// } else {
+//   console.log('Свойство userName отсутствует в прототипе класса Date');
+// }
+
+// Количество параметров которые принимает функция-конструктор
+// console.log(Date.length)
+
+// Date.now()
+// console.log(Date.now());
+
+// Date.parse()
+// let date = new Date('2003-05-25');
+// console.log(typeof Date.parse(date));
+
+// Date.UTC()
+// console.log(Date.UTC(1995, 3))
+
+// invalid date
+// console.log(new Date(undefined));
+
+// Приравнивание к примитиву
+// console.log(new Date(null));
+// console.log(new Date(false));
+// console.log(new Date(['1995-06-15']));
+
+// [toPrimitive]()
+// let date = new Date(0);
+// console.log(date);
+// console.log(date[Symbol.toPrimitive]('string'));
+// console.log(date[Symbol.toPrimitive]('number'));
+
+// getDate()
+// let date = new Date('2001-03-25');
+// console.log(date.getDate());
+
+// getDay()
+// let date = new Date('2023-08-23');
+// console.log(date.getDay());
+
+// 

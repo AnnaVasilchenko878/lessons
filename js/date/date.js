@@ -58,4 +58,30 @@
 // let date = new Date('2023-08-23');
 // console.log(date.getDay());
 
-// 
+// getFullYear()
+// let date = new Date('2022-06-15');
+// console.log(date.getFullYear());
+
+// getHours()
+// let time = new Date('2021-02-25T15:05:13');
+// console.log(time.getHours());
+
+// getMilliseconds()
+// let time = new Date('2021-02-25T15:05:13.005');
+// console.log(time.getMilliseconds());
+
+// getMinutes()
+// let time = new Date('2021-02-25T15:05:13.005');
+// console.log(time.getMinutes());
+
+// getMonth()
+// let date = new Date('2021-02-25T15:05:13.005');
+// console.log(date.getMonth());
+
+// getSeconds()
+// let date = new Date('2021-02-25T15:05:13.005');
+// console.log(date.getSeconds());
+
+// getTime()
+// let date = new Date('2021-02-25T15:05:13.005');
+// console.log(date.getTime())

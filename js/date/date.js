@@ -85,3 +85,70 @@
 // getTime()
 // let date = new Date('2021-02-25T15:05:13.005');
 // console.log(date.getTime())
+
+//setDate()
+// let date = new Date('May 15, 1995 22:05:14');
+// date.setDate(10);
+// console.log(date);
+
+//setFullYear()
+// let date = new Date('May 15, 1995 22:05:14');
+// date.setFullYear(1998);
+// console.log(date);
+
+// let date = new Date('May 15, 1995 22:05:14');
+// date.setFullYear(1998, 6);
+// console.log(date);
+
+// let date = new Date('May 15, 1995 22:05:14');
+// date.setFullYear(1998, 6, 25);
+// console.log(date)
+
+//setHours()
+// let date = new Date('May 15, 1995 22:05:14');
+// date.setHours(15);
+// console.log(date);
+
+// let date = new Date('May 15, 1995 22:05:14');
+// date.setHours(15, 15);
+// console.log(date);
+
+// let date = new Date('May 15, 1995 22:05:14');
+// date.setHours(15, 15, 15);
+// console.log(date);
+
+// toDateString()
+// let date = new Date(2021, 1, 20, 12, 20, 5);
+// console.log(date.toString());
+
+// toISOString()
+// let date = new Date(2021, 1, 20, 12, 20, 5);
+// console.log(date.toISOString());
+
+// toJSON()
+// let date = new Date(2021, 1, 20, 12, 20, 5);
+// console.log(date.toJSON());
+
+// toLocaleDateString()
+// TODO: Вернуться после изучения  Intl.DateTimeFormat
+// let date = new Date(2021, 1, 20, 12, 20, 5);
+// console.log(date.toLocaleDateString());
+
+//toString()
+// let date = new Date(2021, 1, 20, 12, 20, 5);
+// console.log(date.toString());
+
+// toTimeString()
+// let date = new Date(2021, 1, 20, 12, 20, 5);
+// console.log(date.toTimeString());
+
+// toUTCString()
+// let date = new Date(2021, 1, 20, 12, 20, 5);
+// console.log(date.toUTCString());
+
+// Date.UTC()
+// console.log(Date.UTC(2021, 1, 4));
+
+// valueOf()
+let date = new Date(2021, 1, 20, 12, 20, 5);
+console.log(date.valueOf());

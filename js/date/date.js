@@ -150,5 +150,5 @@
 // console.log(Date.UTC(2021, 1, 4));
 
 // valueOf()
-let date = new Date(2021, 1, 20, 12, 20, 5);
-console.log(date.valueOf());
+// let date = new Date(2021, 1, 20, 12, 20, 5);
+// console.log(date.valueOf());

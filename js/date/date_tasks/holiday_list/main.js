@@ -1,11 +1,5 @@
 // Создайте функцию, которая будет выводить список всех праздников в заданном году.
 
-// создать объект ключ празник а значение массив
-// ветвелиние и добаить в объект празники с плавающей датой 
-// создать объект с наследниками ключи названия празников - значения экземпляры класса date c параметрами из массива 0-день 1 месяц
-
-
-// объект с основными датами
 
   let dateHolidays = {
     'Новый Год' : [1,0],
@@ -26,7 +20,6 @@
     'День информатики': [4,11]
   }
 
-// расчет всех праздников и добавление их в соответсвии с годом
 function calcHolidays(year) {
   function calcEasterday() {
         let easterDate = [],
@@ -87,7 +80,7 @@ function calcHolidays(year) {
   let cyberMondayDate = calcCyberMonday(dayBlackFriday);
     if (year >= 2013) {
       dateHolidays['Черная пятница'] = dayBlackFriday;
-      dateHolidays['Киберпонедельник'] = dayBlackFriday
+      dateHolidays['Киберпонедельник'] = cyberMondayDate;
      }
 }
 calcHolidays(2021);

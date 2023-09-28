@@ -2,18 +2,23 @@
 
 function calcDay(firstDate, secondDate) {
   let first = new Date(firstDate),
-      second = new Date(secondDate),
-      hours = second.getHours() - first.getHours(),
-      days = second.getDate() - first.getDate();
+    second = new Date(secondDate),
+    hours = second.getHours() - first.getHours(),
+    days = second.getDate() - first.getDate();
+    console.log(second.getHours())
+    console.log(first.getHours())
   if (second.getHours() < first.getHours()) {
     days--;
-    hours = 24 - second.getHours();
+    hours = 24 - first.getHours() + second.getHours();
+    console.log(hours);
   }
-    let minutes = second.getMinutes() - first.getMinutes();
+  let minutes = second.getMinutes() - first.getMinutes();
   if (second.getMinutes() < first.getMinutes()) {
-      hours--;
-      minutes = 60 - second.getMinutes();
+    hours--;
+    minutes = 60 - first.getMinutes() + second.getMinutes();
   }
-  console.log(`Разница между датами составляет ${days} дня(дней), ${hours} часов, ${minutes} минут`);
+  return `Разница между датами составляет ${days} дня(дней), ${hours} часов, ${minutes} минут`;
 }
-calcDay('2003-05-12T10:00', '2003-05-15T07:24');
+
+let difference = calcDay('2003-05-12T10:00', '2003-05-15T05:24');
+console.log(difference);

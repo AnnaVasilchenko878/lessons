@@ -3,8 +3,7 @@
 function plusDay(currentDate, currentDay) {
   let date = new Date(currentDate);
   date.setDate(date.getDate() + currentDay);
-  console.log(date)
-
+  return date
 }
-plusDay('2023-05-06', 5);
-plusDay('2023-05-31', 5);
+let newDate = plusDay('2023-05-06', 5);
+console.log(newDate)

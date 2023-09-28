@@ -4,16 +4,13 @@ function checkDate(currentDate) {
   let date = new Date(currentDate);
   let today = new Date();
 
-  // переводим в строку и сравниваем символы
   if (date.toDateString() === today.toDateString()) {
-    console.log("Введенная дата является текущей");
-    // переводится в миллисекунды с unix
+    return "Введенная дата является текущей";
   } else if (date < today) {
-    console.log("Дата меньше текущей");
+    return "Дата меньше текущей";
   } else {
-    console.log("Дата больше текущей");
+    return "Дата больше текущей";
   }
 }
-checkDate('2023-09-03');
-checkDate('2023-09-05');
-checkDate('2023-10-05');
+let isTime = checkDate('2023-09-03');
+console.log(isTime);

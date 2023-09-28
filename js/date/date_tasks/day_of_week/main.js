@@ -2,7 +2,7 @@
 
 function isWeekend(currentDate) {
   let date = new Date(currentDate);
-  date.getDay() == 0 || date.getDay() == 6?console.log('Это выходной день'):console.log('Будний день')
+  return date.getDay() == 0 || date.getDay() == 6? 'Это выходной день': 'Будний день'
 }
-isWeekend('2023-09-02');
-isWeekend('2023-09-05');
+let myDate = isWeekend('2023-09-02');
+console.log(myDate);

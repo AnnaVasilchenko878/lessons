@@ -64,15 +64,16 @@
    if (year >= 2013) return [day, 10]
   }
   let dayBlackFriday = calcBlackFridayDay(2020);
-  dateHolidays['Черная пятница'] = dayBlackFriday;
-  console.log(dateHolidays);
 
-  // function calcCyberMonday(arrayDate) {
-  //   let date = new Date();
-  //   date.setFullYear(year,arrayDate[1], arrayDate[0]+3);
-  // }
-  // let cyberMondayDate = calcCyberMonday(dayBlackFriday);
-  //   if (year >= 2013) {
-  //     dateHolidays['Черная пятница'] = dayBlackFriday;
-  //     dateHolidays['Киберпонедельник'] = cyberMondayDate;
-  //    }
+  function calcCyberMonday(arrayDate, year) {
+    let date = new Date();
+    date.setFullYear(year,arrayDate[1], arrayDate[0]+3);
+    return [date.getDate(),date.getMonth()];
+    
+  }
+
+let cyberMondayDate = calcCyberMonday(dayBlackFriday,2020);
+    if (year >= 2013) {
+      dateHolidays['Черная пятница'] = dayBlackFriday;
+      dateHolidays['Киберпонедельник'] = cyberMondayDate;
+     }

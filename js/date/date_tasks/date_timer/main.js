@@ -5,9 +5,9 @@ function calcDay(date) {
   let curentDate = new Date(date);
   if(curentDate>today) {
     let days = Math.floor(((((curentDate - today)/1000)/60)/60)/24)+1;
-    console.log(`До нужной даты осталось ${days} дней(дня)`)
+    return `До нужной даты осталось ${days} дней(дня)`
     } else {
-      console.log(`Выбранная дата меньше или равна текущей`);
+    return `Выбранная дата меньше или равна текущей`;
     }
 }
 calcDay('2023-09-24'); 

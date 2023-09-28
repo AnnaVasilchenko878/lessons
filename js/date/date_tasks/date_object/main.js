@@ -1,8 +1,12 @@
 // Создайте функцию, которая будет принимать в качестве аргумента дату в формате "Месяц-День-Год" и возвращать объект Date.
 
 function creatDateObject(dateString) {
-  let date = new Date(dateString);
-  console.log(date.toLocaleString());
-  console.log(typeof date);
+  let parts = dateString.split('-');
+  console.log(parts);
+  let formattedDate = parts[2] + '-' + parts[0] + '-' + parts[1];
+  let date = new Date(formattedDate);
+  return date;
 }
-creatDateObject('12-22-2005');
+
+let date = creatDateObject('25-04-2005');
+console.log(date);

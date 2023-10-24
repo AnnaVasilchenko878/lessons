@@ -1,0 +1,14 @@
+body {
+  box-sizing: border-box;
+}
+.box-container {
+  border: 1px solid black;
+  width: 500px;
+  height: 20px;
+}
+.box {
+  width: 20px;
+  height:20px;
+  background-color: rgb(125, 181, 22);
+  position: relative;
+} 

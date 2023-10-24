@@ -10,4 +10,5 @@ function calcDay(date) {
     return `Выбранная дата меньше или равна текущей`;
     }
 }
-calcDay('2023-09-24'); 
+let days = calcDay('2023-09-24');
+console.log(days); 

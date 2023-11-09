@@ -1,0 +1,11 @@
+body {
+  background-color: #1e1346;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+.text {
+  padding: 36px;
+  font-size: 17px;
+}

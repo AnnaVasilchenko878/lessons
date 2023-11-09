@@ -1,0 +1,16 @@
+.parent-block {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.child-block {
+  width: 250px;
+  height: 250px;
+  background-color:antiquewhite;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}

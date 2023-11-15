@@ -27,8 +27,6 @@ event.target.tagName
 Найти близжайщего родителя цели, на которой стоит обработчик, если цели нет то null
 event.target.closest('цель')
 
-Получить атрибут цели (undefined если нет)
-event.target.dataset.action
 
-Получить значение атрибута 
-event.target.value
+Получить значение атрибута (атрибут после data-)
+event.target.dataset.attr

@@ -30,3 +30,6 @@ event.target.closest('цель')
 
 Получить значение атрибута (атрибут после data-)
 event.target.dataset.attr
+
+Узнать есть ли определенный атрибут 
+elem.hasAttribute('название атрибута')

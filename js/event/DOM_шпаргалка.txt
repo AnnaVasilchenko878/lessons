@@ -153,6 +153,15 @@ if(э-лт.classList.contains('имя_класса'))
 Вставить после эл-та
     эл-т.insertAdjacentHTML('afterend', 'html-код')
 
+Вставить DOM элемент перед эл-том  
+    эл-т.insertAdjacentHTML('beforebegin', 'html-код')
+Вставить в родителя в начало 
+    эл-т.insertAdjacentHTML('afterbegin', 'html-код')
+Вставить в родителя в конец
+    эл-т.insertAdjacentHTML('beforeend', 'html-код')
+Вставить после эл-та
+    эл-т.insertAdjacentHTML('afterend', 'html-код')
+
 Обратиться к соседнему эл-т
 перемен = эл-т.nextElementSibling;
 
